@@ -1,5 +1,3 @@
-/* font-family: 'Philosopher', sans-serif; */
-
 @font-face {
     font-family: 'geometriaregular';
     src: url('../fonts/geometria.woff2') format('woff2'),
@@ -44,6 +42,7 @@
     position: relative;
     width: 1440px;
     height: 800px;
+    padding-top: 35px;
 }
 
 .main-header {    
@@ -55,11 +54,73 @@
 }
 
 .main-header__rotate {
-    position: absolute;
-    left: 27px;
+    position: absolute;    
     top: 455px;
+    left: 27px;
     color: #000000;
     text-transform: uppercase;
     transform: rotate(-90deg);
     transform-origin: left bottom 0;
+}
+
+.letter-a {
+    font-family: 'Philosopher', Arial, sans-serif;
+    font-size: 23px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.letter-a__position {      
+    margin-left: 35px;
+}
+
+.wrapper {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.ring-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 54px;
+    height: 54px;
+    
+    background-image: url("../img/ring-menu.png");
+    background-repeat: no-repeat;
+}
+
+.menu {
+    position: absolute;
+    top: 19px;
+    right: 17px;
+
+    cursor: pointer;
+}
+
+.picture1 {
+    width: 800px;
+    height: 525px;
+}
+
+.picture2 {
+    width: 860px;
+    height: 490px;
+}
+
+.region {
+    font-family: 'geometriaregular', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 21px;    
+    text-transform: uppercase;
+    width: 50px;
+    padding: 27px 23px;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 118px;
+    left: 505px;
 }
