@@ -1,6 +1,65 @@
 /* font-family: 'Philosopher', sans-serif; */
 
+@font-face {
+    font-family: 'geometriaregular';
+    src: url('../fonts/geometria.woff2') format('woff2'),
+         url('../fonts/geometria.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geometriaheavy';
+    src: url('../fonts/geometria-heavy.woff2') format('woff2'),
+         url('../fonts/geometria-heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geometriaheavy_italic';
+    src: url('../fonts/geometria-heavyitalic.woff2') format('woff2'),
+         url('../fonts/geometria-heavyitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geometrialight';
+    src: url('../fonts/geometria-light.woff2') format('woff2'),
+         url('../fonts/geometria-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geometrialight_italic';
+    src: url('../fonts/geometria-lightitalic.woff2') format('woff2'),
+         url('../fonts/geometria-lightitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .main-body_width_1440 {
+    position: relative;
     width: 1440px;
     height: 800px;
+}
+
+.main-header {    
+    font-family: 'geometrialight_italic', Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 14.4px;        
+}
+
+.main-header__rotate {
+    position: absolute;
+    left: 27px;
+    top: 455px;
+    color: #000000;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    transform-origin: left bottom 0;
 }
