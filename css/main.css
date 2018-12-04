@@ -61,6 +61,7 @@
     text-transform: uppercase;
     transform: rotate(-90deg);
     transform-origin: left bottom 0;
+    opacity: 0.4;
 }
 
 .letter-a {
@@ -100,14 +101,35 @@
     cursor: pointer;
 }
 
+.layer-picture1 {
+    position: relative;
+    width: 800px;
+    height: 525px; 
+    background-color: rgba(247, 230, 17, 0.9);   
+}
+
 .picture1 {
     width: 800px;
     height: 525px;
+    opacity: 0.1;
 }
-
+/*
+.picture1::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 525px;
+    background-color: rgba(247, 230, 17, 0.8);
+}
+*/
 .picture2 {
+    position: absolute;
+    top: 87px;
+    left: 420px;
+
     width: 860px;
     height: 490px;
+    opacity: 0.5;
 }
 
 .region {
@@ -119,8 +141,42 @@
     padding: 27px 23px;
     border: 1px solid black;
     border-radius: 50%;
+    color: #ffffff;
 
     position: absolute;
     top: 118px;
     left: 505px;
+    margin: 0;
+}
+
+.mytitle {
+    font-family: 'Philosopher', Arial, sans-serif;
+    font-size: 140px;
+    line-height: 168px;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 215px;
+    left: 143px;
+
+    margin: 0;
+    letter-spacing: 48px;
+    color: #ffffff;
+}
+
+.tagline {
+    font-family: 'Philosopher', Arial, sans-serif;
+    font-size: 9px;
+    line-height: 11px;
+}
+
+.tagline_directions_left-top {
+    position: absolute;
+    top: 430px;
+    left: 245px;
+    
+    text-transform: lowercase;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    opacity: 0.5;
 }
