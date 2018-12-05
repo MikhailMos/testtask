@@ -40,9 +40,15 @@
 
 .main-body_width_1440 {
     position: relative;
+    /*max-width: 1440px;*/
     width: 1440px;
-    height: 800px;
-    padding-top: 35px;
+    max-height: 800px;
+    margin: 0;
+    padding-top: 97px;
+    /*
+    padding-left: 80px;
+    padding-right: 80px;
+    */
 }
 
 .main-header {    
@@ -71,13 +77,16 @@
     color: #000000;
 }
 
-.letter-a__position {      
-    margin-left: 35px;
+.letter-a__position {
+    position: absolute;
+    top: 35px;
+    left: 35px;      
+    /*margin-left: 35px;*/
 }
 
 .wrapper {
     position: relative;
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -101,35 +110,72 @@
     cursor: pointer;
 }
 
-.layer-picture1 {
-    position: relative;
-    width: 800px;
-    height: 525px; 
-    background-color: rgba(247, 230, 17, 0.9);   
+.conteiner-flex {
+    display: flex;
+    flex-direction: column;
+    height: 95px;
+    justify-content: space-between;
+    position: absolute;
+    top: 70px;
+    left: 140px;
+}
+
+.trapezium {
+    position: absolute;
+    top: 165px;
+    left: 270px;
+}
+
+.layer-picture1 {    
+    max-width: 800px;
+    max-height: 525px; 
+    background-color: rgba(247, 230, 17, 1);   
 }
 
 .picture1 {
-    width: 800px;
-    height: 525px;
-    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
 }
 /*
-.picture1::after {
-    content: "";
+.layer-picture1::after {
+    content: "
+        <svg width="178" height="283">
+            <polyline points="1,1 177,1 140,282 1,282 1,1" stroke="#000" stroke-width="1"/>
+        </svg>
+    ";
     position: absolute;
-    width: 800px;
-    height: 525px;
-    background-color: rgba(247, 230, 17, 0.8);
 }
 */
-.picture2 {
+.layer-picture2 {
     position: absolute;
     top: 87px;
     left: 420px;
 
-    width: 860px;
-    height: 490px;
+    max-width: 860px;
+    max-height: 490px; 
+    background-color: rgba(247, 230, 17, 1);   
+}
+
+.picture2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+.layer-picture2::before {
+    content: "51";
+    position: absolute;
+    top: -55px;
+    left: 60px;
+
+    font-family: 'geometriaheavy', Arival, sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+
     opacity: 0.5;
+    transform: rotate(-90deg);    
 }
 
 .region {
