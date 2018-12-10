@@ -163,7 +163,7 @@
 
 .layer-picture1 {    
     max-width: 800px;
-    height: 525px; 
+    max-height: 525px; 
     background-color: rgba(247, 230, 17, 1); 
     overflow: hidden;  
     margin-bottom: 84px;
