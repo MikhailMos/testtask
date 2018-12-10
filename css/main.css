@@ -45,10 +45,17 @@
     max-height: 800px;
     margin: 0;
     padding-top: 97px;
-    /*
-    padding-left: 80px;
-    padding-right: 80px;
-    */
+    background: linear-gradient(to left, #ffffff 0%,#ffffff 43%,#e7e7e7 43%,#fefefe 100%);
+}
+
+.main-body_width_1440::before {
+    content: '';
+    position: absolute;
+    bottom: -63px;
+    left: 0;
+    width: 118px;
+    height: 180px;
+    background: linear-gradient(to left, #f2f2f2 0%, #f4f4f4 20%, #fefefe 60%);
 }
 
 .main-header {    
