@@ -54,17 +54,17 @@
 .main-header {    
     font-family: 'geometrialight_italic', Arial, sans-serif;
     font-size: 12px;
-    font-style: italic;
     font-weight: lighter;
     line-height: 14.4px;        
 }
 
 .main-header__rotate {
     position: absolute;    
-    top: 455px;
-    left: 27px;
+    top: 431px;
+    left: 36px;
     color: #000000;
-    text-transform: uppercase;
+    text-transform: lowercase;
+    letter-spacing: 0.7;
     transform: rotate(-90deg);
     transform-origin: left bottom 0;
     opacity: 0.4;
@@ -72,28 +72,28 @@
 
 .letter-group1 {
     font-family: 'Philosopher', Arial, sans-serif;
-    font-size: 23px;
-    line-height: 25px;
+    font-size: 35px;
+    line-height: 35px;
     color: #000000;
 }
 
 .letter-group1__position {
     position: absolute;
-    top: 35px;
+    top: 29px;
     left: 35px;      
     /*margin-left: 35px;*/
 }
 
 .letter-group2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    line-height: 35px;
+    font-family: 'geometriaregular', Arial, sans-serif;
+    font-size: 75px;
+    line-height: 75px;
 
     color: #ffffff;
-    text-shadow: 2px 2px 0px black, 
-                -2px -2px 0px black, 
-                -2px 2px 0px black, 
-                2px -2px 0px black;
+    text-shadow: 1px 1px 0px black, 
+                -1px -1px 0px black, 
+                -1px 1px 0px black, 
+                1px -1px 0px black;
 }
 
 .letter-group2__a,
@@ -103,18 +103,18 @@
 }
 
 .letter-group2__a {
-    top: 60px;
-    right: 400px;
+    top: 52px;
+    right: 401px;
 }
 
 .letter-group2__f {
-    top: 160px;
-    right: 235px;
+    top: 134px;
+    right: 237px;
 }
 
 .letter-group2__g {
-    top: 100px;
-    right: 250px;
+    top: 115px;
+    right: 235px;
     color: #f7e611;
 }
 
@@ -138,7 +138,7 @@
 
 .menu {
     position: absolute;
-    top: 19px;
+    top: 21px;
     right: 17px;
 
     cursor: pointer;
@@ -147,25 +147,26 @@
 .conteiner-flex {
     display: flex;
     flex-direction: column;
-    height: 95px;
+    height: 97px;
     justify-content: space-between;
     position: absolute;
-    top: 70px;
-    left: 140px;
+    top: 68px;
+    left: 143px;
+    letter-spacing: -1px;
 }
 
 .trapezium {
     position: absolute;
-    top: 165px;
-    left: 270px;
+    top: 168px;
+    left: 268px;
 }
 
 .layer-picture1 {    
     max-width: 800px;
-    max-height: 525px; 
+    height: 525px; 
     background-color: rgba(247, 230, 17, 1); 
     overflow: hidden;  
-    margin-bottom: 60px;
+    margin-bottom: 84px;
 }
 
 .picture1 {
@@ -202,8 +203,8 @@
 .layer-picture2::before {
     content: "51";
     position: absolute;
-    top: -55px;
-    left: 60px;
+    top: -57px;
+    left: 61px;
 
     font-family: 'geometriaheavy', Arival, sans-serif;
     font-size: 28px;
@@ -211,7 +212,8 @@
     color: #000000;
 
     opacity: 0.5;
-    transform: rotate(-90deg);    
+    transform: rotate(-90deg); 
+    letter-spacing: 1px;   
 }
 
 .slider {
@@ -221,11 +223,11 @@
     height: 383px;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 
     position: absolute;
-    top: 130px;
-    right: 158px;    
+    top: 159px;
+    right: 160px;    
 }
 
 .slider__background {
@@ -251,34 +253,37 @@
     color: #000000;
 
     position: absolute;
-    left: 23px;
-    bottom: 41px;
+    left: 20px;
+    bottom: 28px;
+    letter-spacing: 5px;
 }
 
 .bottom-number {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 20.5px;
     color: #000000;
 
     position: absolute;
-    left: 77px;
-    bottom: 23px;
+    left: 74px;
+    bottom: 18px;
 }
 
 .bottom-number::before {
     content: '';
-    position: absolute;   
-    bottom: 36px;
+    position: absolute;
+    left: 2px;   
+    bottom: 25px;
     width: 17px;
-    border-top: 3px solid #000000;    
+    border-top: 4px solid #000000;    
 }
 
 .region {
     font-family: 'geometriaregular', Arial, sans-serif;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 21px;    
     text-transform: uppercase;
-    width: 50px;
+    width: 53px;
+    height: 45px;
     padding: 27px 23px;
     border: 1px solid black;
     border-radius: 50%;
@@ -292,8 +297,9 @@
 
 .mytitle {
     font-family: 'Philosopher', Arial, sans-serif;
-    font-size: 140px;
+    font-size: 136px;
     line-height: 168px;
+    font-weight: lighter;
     text-transform: uppercase;
 
     position: absolute;
@@ -301,7 +307,7 @@
     left: 143px;
 
     margin: 0;
-    letter-spacing: 48px;
+    letter-spacing: 53px;
     color: #ffffff;
 }
 
@@ -313,8 +319,8 @@
 
 .tagline_directions_left-top {
     position: absolute;
-    top: 430px;
-    left: 245px;
+    top: 426px;
+    left: 242px;
     
     text-transform: lowercase;
     transform: rotate(-90deg);
@@ -324,7 +330,22 @@
 
 .wrapper-letters {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    padding-left: 110px;
+}
+
+.letters-1,
+.letters-2 {
+    position: relative;
+}
+
+.letters-1 {
+    width: 424px;
+}
+
+.letters-1__triangle-1 {
+    position: absolute;
+    top: -29px;
 }
 
 .middle-icon {
@@ -332,6 +353,7 @@
     width: 212px;
     height: 10px;
     background-color: #f7e611;
+    margin-right: 124px;
 }
 
 .middle-icon::before {
@@ -342,4 +364,91 @@
     height: 112px;
     background-image: url('../img/ring.png');
     background-repeat: no-repeat;
+}
+
+.letters {
+    font-family: 'Philosopher', Arial, sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.letters-1__a {
+    position: absolute;
+    top: 18px;
+    left: 77px;
+}
+
+.letters-1__f1 {
+    position: absolute;
+    top: -18px;
+    left: 142px;
+}
+
+.letters-1__f2 {
+    position: absolute;
+    top: 27px;
+    left: 206px;
+}
+
+.letters-1__i {
+    position: absolute;
+    left: 265px;
+}
+
+.letters-1__triangle-2 {
+    position: absolute;
+    top: 59px;
+    left: 261px;
+}
+
+.letters-1__n {
+    position: absolute;
+    top: 39px;
+    left: 331px;
+}
+
+.letters-2 {
+    margin-right: 318px;
+}
+
+.letters-2__a {
+    position: absolute;
+    top: -4px;
+    left: -20px;
+}
+
+.letters-2__triangle-1 {
+    position: absolute;
+    top: 32px;
+    left: 14px;
+}
+
+.letters-2__g {
+    position: absolute;
+    top: 4px;
+    left: 82px;
+    /*text-shadow: -2px 1px 0 #b9b9b9;*/
+}
+
+.letters-2__g::before {
+    content: '';
+    background-image: url(../img/background-g.png);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 7px;
+    left: -5px;
+}
+
+.letters-2__e {
+    position: absolute;
+    top: 31px;
+    left: 193px;
+}
+
+.letters-2__triangle-2 {
+    position: absolute;
+    top: 13px;
+    left: 250px;
 }
