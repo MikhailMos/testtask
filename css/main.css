@@ -71,7 +71,7 @@
     left: 36px;
     color: #000000;
     text-transform: lowercase;
-    letter-spacing: 0.7;
+    letter-spacing: 0.7px;
     transform: rotate(-90deg);
     transform-origin: left bottom 0;
     opacity: 0.4;
