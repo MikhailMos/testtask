@@ -38,25 +38,43 @@
     font-style: normal;
 }
 
-.main-body_width_1440 {
-    position: relative;
-    /*max-width: 1440px;*/
-    width: 1440px;
-    max-height: 800px;
-    margin: 0;
-    padding-top: 97px;
-    background: linear-gradient(to left, #ffffff 0%,#ffffff 43%,#e7e7e7 43%,#fefefe 100%);
+@media screen and (max-width: 1440px) {
+    .main-body_width {
+        position: relative;
+        width: 1440px;
+        max-height: 800px;
+        margin: 0;
+        padding-top: 97px;
+        background: linear-gradient(to left, #ffffff 0%,#ffffff 43%,#e7e7e7 43%,#fefefe 100%);
+    }
+    
+    .main-body_width::before {
+        content: '';
+        position: absolute;
+        bottom: -63px;
+        left: 0;
+        width: 118px;
+        height: 180px;
+        background: linear-gradient(to left, #f2f2f2 0%, #f4f4f4 20%, #fefefe 60%);
+    }
+    
 }
 
-.main-body_width_1440::before {
-    content: '';
-    position: absolute;
-    bottom: -63px;
-    left: 0;
-    width: 118px;
-    height: 180px;
-    background: linear-gradient(to left, #f2f2f2 0%, #f4f4f4 20%, #fefefe 60%);
+@media screen and (max-width: 320px) {
+    html {
+       -webkit-text-size-adjust: none;
+    }
+
+    .main-body_width {
+        position: relative;
+        width: 320px;
+        max-height: 568px;
+        margin: 0;
+        padding: 0;
+        background: #f7e611;
+    }
 }
+
 
 .main-header {    
     font-family: 'geometrialight_italic', Arial, sans-serif;
